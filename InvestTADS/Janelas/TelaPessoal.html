@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="estilos" href="FolhasDeEstilo/TelaPessoal.css">
+    <link rel="style" href="FolhasDeEstilo/TelaPessoal.css">
     <title>Plano Pessoal</title>
 </head>
-<body>
-    <!-- Navbar -->
+<body style="background-color: rgb(236, 227, 227);">
+<!-- Navbar -->
 <nav class="navbar navbar-light bg-light site-header sticky-top py-1"><img src="imagens/logo.png" class="img-fluid rounded " id="logo" alt="Imagem responsiva" style="margin-right: 30px;">
     <!-- Educacional-->
     <div class="dropdown">
@@ -49,6 +49,26 @@
 		<a class="btn btn-primary btn btn-outline-danger" href="" role="button">Logout</a>
 	</a></center>
 </nav> 
+
+<div class="container col-md-3" style="background-image: url(imagens/imggestaopessoal.jpg); border-radius: 10px; margin-top: 50px;"><!--https://dx2brasil.com.br/wp-content/uploads/2014/11/blog_imagens_2017-infografico-1.jpg-->
+    <center>
+    <form>
+          <div class="form-group col-md-10">
+            <label for="inputGanhos" style="margin-top: 10px;"></label>
+            <input type="text" class="form-control" id="inputEmail4" placeholder="Valor de Ganhos">
+          </div>
+          <div class="form-group col-md-10">
+            <label for="inputDespesas"></label>
+            <input type="text" class="form-control" id="inputPassword4" placeholder="Valor de Despesas">
+          </div>
+        <div class="form-group col-md-10">
+          <label for="inputInvestimento"></label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Valor para Investimentos">
+        </div>
+        <button type="submit" class="btn btn-primary btn btn-danger" style="margin-bottom: 10px;">Finalizar</button>
+      </form>
+      </center>
+  </div>
 
 <!-- Rodapé -->
 <footer class="my-5 pt-5 text-muted text-center text-small">
