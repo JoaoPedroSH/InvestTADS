@@ -1,0 +1,13 @@
+#container-form-gestao{
+    background-color:rgb(221, 215, 215);
+    border-radius: 10px; 
+    margin-top: 100px;
+}
+
+#inputValInvestimentos{
+    margin-bottom: 35px;
+}
+
+#inputSaldoFinal{
+    margin-bottom: 20px;
+}
