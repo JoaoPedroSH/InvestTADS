@@ -17,15 +17,7 @@
   </head>
 <!-------------------------------------------------------------------------------------------------------------->	
 		
-<body style="background-color: rgba(211, 207, 202, 0.596);">
-	<style>
-		body {
-		  background-image: url("imagens/grafico.png");
-		  background-size: cover;
-	  height: 800px;
-	  position: relative;
-		}
-	</style>
+<body>
 
 <!-- Navbar -->
 <nav class="navbar navbar-light bg-light site-header sticky-top py-1"><img src="imagens/logo.png" class="img-fluid rounded " id="logo" alt="Imagem responsiva">
@@ -54,7 +46,7 @@
 </nav> 
 	  
 <!-- Jumbotron de apresentação-->
-<center><div> <!--  —Foto: Mediamodifier/Pixabay  -->
+<center><div class="jumbotron" style="background-image: url(Imagens/imgjumb.png); background-size: 100%;"> <!--  —Foto: Mediamodifier/Pixabay  -->
 
   <h1 class="display-4">Olá, mundo!</h1>
 
@@ -162,7 +154,7 @@
 
 											<div class="invalid-feedback">
 
-												CPF inválido.
+												CPF inválida.
 
 											</div>
 								</div>
@@ -184,19 +176,19 @@
 
 							<hr class="mb-4">
 
-							<p>ATENÇÃO!!! O E-mail e a Senha que informar serão seus dados de login para acessar seu Plano.</p>
+							<p>ATENÇÃO!!! O Email e a Senha que informar serão seus dados de login para acessar seu Plano.</p>
 
 							<div class="form-row">
 
 								<div class="form-group col-md-6">
 
-									<label for="inputEmail1">E-mail</label>
+									<label for="inputEmail1">Email</label>
 
 										<input type="email" class="form-control" name="email" id="inputEmail1" placeholder="exemplo@email.com" required="">
 
 											<div class="invalid-feedback">
 
-												É obrigatório inserir um e-mail válido.
+												É obrigatório inserir um email válido.
 
 											</div>
 
@@ -232,208 +224,11 @@
 
 </div>	
 
-</div>
 
-<!----------------------------------------------------------------------------------------------------------->	
-
-        <div class="card mb-4 shadow-sm">
-
-          <div class="card-header">
-
-            <h4 class="my-0 font-weight-normal">Plano Familiar&nbsp;</h4>
-
-          </div>
-
-          <div class="card-body">
-
-            <h1 class="card-title pricing-card-title">R$15 <small class="text-muted">/ mês</small></h1>
-			
-				<ul class="list-unstyled mt-3 mb-4">
-
-					<li>- Gestão Operacional&nbsp;</li>
-
-					<li>- Multi Acesso&nbsp;</li>
-
-					<li>- Convide até 3 pessoas&nbsp;</li>
-
-					<li>- Relatórios&nbsp;</li>
-
-					<li>&nbsp;</li>
-
-				</ul>
-
-            <button type="button" class="btn btn-lg btn-block btn-outline-secondary" data-toggle="modal" data-target="#modalPlanoFamiliar">Contrate-nos</button>
-
-			<div class="modal fade" id="modalPlanoFamiliar" tabindex="-1" role="dialog" aria-labelledby="planopessoal" aria-hidden="true">
-
-  				<div class="modal-dialog" role="document">
-
-    				<div class="modal-content">
-
-      					<div class="modal-header">
-
-        					<h4 class="modal-title" id="planofamiliar">Cadastro do Plano Familiar</h4>
-
-        					<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-
-          						<span aria-hidden="true">&times;</span>
-
-        					</button>
-
-      					</div>
-
-      				<div class="modal-body">
-
-						<form>
-
-							<div class="form-row">
-
-								<div class="form-group col-md-6">
-
-									<label for="inputNome2">Nome</label>
-
-										<input type="text" class="form-control" id="inputNome2" required="">
-
-											<div class="invalid-feedback">
-
-												Nome inválido.
-
-											</div>
-								</div>
-
-								<div class="form-group col-md-6">
-
-									<label for="inputSobrenome2">Sobrenome</label>
-
-										<input type="text" class="form-control" id="inputSobrenome2" required="">
-
-											<div class="invalid-feedback">
-
-												Sobernome inválido.
-
-											</div>
-
-								</div>
-
-							</div>
-
-							<div class="form-row">
-
-								<div class="form-group col-md-6">
-
-									<label for="inputCidade2">Cidade</label>
-
-										<input type="text" class="form-control" id="inputCidade2" required="">
-
-											<div class="invalid-feedback">
-
-												Cidade inválida.
-
-											</div>
-
-								</div>
-
-								<div class="form-group col-md-6">
-
-									<label for="inputCelular2">Celular</label>
-
-									
-									<input type="text" class="form-control" id="inputCelular2" placeholder="Ex:. (XX) XXXXX-XXXX" required="">
-
-											<div class="invalid-feedback">
-
-												Celular inválido.
-
-											</div>
-
-								</div>
-
-							</div>
-
-							<hr class="mb-4">
-
-							<p>ATENÇÃO!!! O Email e a Senha que informar serão seus dados de login para acessar seu Plano.</p>
-
-							<div class="form-row">
-
-								<div class="form-group col-md-6">
-
-									<label for="inputEmail2">Email</label>
-
-										<input type="email" class="form-control" id="inputEmail2" placeholder="exemplo@email.com" required="">
-
-											<div class="invalid-feedback">
-
-												É obrigatório inserir um email válido.
-
-											</div>
-
-								</div>
-
-								<div class="form-group col-md-6">
-
-									<label for="inputSenha2">Senha</label>
-
-										<input type="password" class="form-control" id="inputSenha2" required="">
-
-								</div>
-
-							</div>
-
-							<!--Pagamento Familiar-->
-							<hr class="mb-4">
-
-							<h2 class="mb-3">Pagamento</h2>
-
-							<h4 style="margin-top: 40px;">PIX</h4>
-
-							<p>Encaneie o QRcode ou copie o código.</p>
-
-							<center><img src="imagens/qrcodeconta.jpeg" class="img-fluid rounded " id="qrcodeconta" alt="Imagem responsiva" ></center>
-
-							<center><p>00020126580014BR.GOV.BCB.PIX01367368cbc3-2d56-40e2-a3a5-29f1738180cb52040000530398654040.105802BR5923Joao Pedro Pereira Lima6009SAO PAULO61080540900062070503***6304BF66</p></center>
-
-							<hr class="mb-4">
-
-							<h4>TRANSFERÊNCIA</h4>
-
-							<center><h6>Agência:</h6><p>0001</p></center>
-
-							<center><h6>Conta:</h6><p>34937381-4</p></center>
-
-							<center><h6>Banco:</h6><p>260 - Nu Pagamentos S.A.</p></center>
-
-							<center><h6>Nome do Receptor:</h6><p>João Pedro Pereira Lima</p></center>
-
-							<hr class="mb-4">
-
-							<h6>Após o pagamento, envie o Comprovante ou o Print do mesmo, logo abaixo. (Tamanho máximo do arquivo: 4MB)</h6>
-
-							<p></p>
-
-							<input type="hidden" name="MAX_FILE_SIZE" value="4194304"/>
-
-							<input type="file"/>
-
-							<hr class="mb-4">
-
-							<button type="submit" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-
-							<button type="submit" class="btn btn-warning">Finalizar Cadastro</button>
-
-						</form>
-
-					</div>
-
-				</div>
-
-			</div>
-
-		</div>
 
 <!------------------------------------------------------------------------------------------------------------------------------->
 
-		<div class="card mb-4 shadow-sm" style="background-color: #f5f5f5cc;">
+		<div class="card mb-4 shadow-sm">
 
 			<div class="card-header">
 
@@ -459,7 +254,7 @@
 
 				</ul>
 
-			  <button type="button" class="btn btn-lg btn-block btn-outline-secondary" data-toggle="modal" data-target="#modalPlanoFamiliar">Contrate-nos</button>
+			  <button type="button" class="btn btn-lg btn-block btn-secondary" data-toggle="modal" data-target="#modalPlanoFamiliar">Contrate-nos</button>
 
 			  	<div class="modal fade" id="modalPlanoFamiliar" tabindex="-1" role="dialog" aria-labelledby="planopessoal" aria-hidden="true">
 
