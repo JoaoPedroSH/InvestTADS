@@ -20,11 +20,11 @@
 
 <center><div class="col-3" style="margin-top: 170px;">
 
-	<form class="form-signin">
+	<form method="POST" action="Login.php" class="form-signin">
 
       <img class="mb-4" src="Imagens/logo.png" id="logologin" alt="" width="200" height="53">
 
-        <input type="email" class="form-control" id="inputEmail1" placeholder="Email" required="">
+        <input type="email" name="email" class="form-control" id="inputEmail1" placeholder="Email" required="">
 
 		      <div class="invalid-feedback">
 
@@ -32,17 +32,7 @@
 
           </div>
 
-        <input type="password" id="inputPassword" class="form-control" style="margin-top: 5px;" placeholder="Senha" required="">
-
-          <div class="checkbox mb-3">
-
-            <label>
-
-              <input type="checkbox" style="margin-top: 20px;" value="remember-me"> Lembrar de mim
-
-            </label>
-
-          </div>
+        <input type="password" name="senha" id="inputPassword" class="form-control" style="margin-top: 5px;" placeholder="Senha" required="">
 
         <button class="btn btn-lg btn-primary btn-block btn-outline-danger" type="submit">Login</button>
 
