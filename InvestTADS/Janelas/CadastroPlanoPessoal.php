@@ -30,7 +30,7 @@
 
 	$sobrenome = $_POST['sobrenome'];
 
-	$cidade = $_POST['cidade'];
+	$cpf = $_POST['pf'];
 
     $celular = $_POST['celular'];
     
@@ -38,9 +38,9 @@
 
 	$senha = $_POST['senha'];
 
-	$sql = mysql_query("INSERT into cadastroplanopessoal(nome, sobrenome, cidade, celular, email, senha) 
+	$sql = mysql_query("INSERT into cadastroplanopessoal(nome, sobrenome, cpf, celular, email, senha) 
 
-	values('$nome','$sobrenome','$cidade','$celular','$email','$senha')");
+	values('$nome','$sobrenome','$cpf','$celular','$email','$senha')");
 
     echo "<center>";
 
