@@ -29,11 +29,11 @@
 
     //direncionando pra uma página após 5 segundo
         function loginsucessfully(){
-            setTimeout( "window.location='TelaPessoal.html'",5000);
+            setTimeout( "window.location='TelaPessoal.html'",0);
         }
 
         function loginfailed(){
-            setTimeout("window.location='Login.html'",5000);
+            setTimeout("window.location='Login.html'",0);
         }
     </script>
 </head>
