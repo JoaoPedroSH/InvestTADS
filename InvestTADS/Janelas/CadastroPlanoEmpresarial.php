@@ -27,7 +27,7 @@
 
 	mysql_select_db($banco) or die(mysql_error());
 	
-	$nomeEmpresa = $_POST['nome'];
+	$nome = $_POST['nome'];
 
 	$area = $_POST['area'];
 
@@ -35,15 +35,15 @@
 
     $telefone = $_POST['telefone'];
     
-	$emailEmpresa = $_POST['email'];
+	$email = $_POST['email'];
 
-	$senhaEmpresa = $_POST['senha'];
+	$senha = $_POST['senha'];
 
     $comprovante = $_POST['comprovante'];
 
 	$sql = mysql_query("INSERT into cadastroplanoempresarial(nome, area, cnpj, telefone, email, senha, comprovante) 
 
-	values('$nome','$area','$cnpj','$telefone','$emailEmpresa','$senhaEmpresa','$comprovante')");
+	values('$nome','$area','$cnpj','$telefone','$email','$senha','$comprovante')");
 
     echo "<center>";
 
