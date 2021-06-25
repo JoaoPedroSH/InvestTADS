@@ -52,7 +52,7 @@
 
     echo "<hr>";
 
-    echo "<a href=\"Login.html\" class=\"alert-link\">> Clique Aqui para ir ao Login < |</a><a href=\"Index.html\" class=\"alert-link\"> > Clique Aqui para voltar ao Home <</a></div>";
+    echo "<a href=\"Login.html\" target=\"_blank\" class=\"alert-link\">> Clique Aqui para ir ao Login < |</a><a href=\"Index.html\" class=\"alert-link\"> > Clique Aqui para voltar ao Home <</a></div>";
 
     echo "</center>";
 
