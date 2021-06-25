@@ -30,7 +30,7 @@
 
 	$sobrenome = $_POST['sobrenome'];
 
-	$cpf = $_POST['pf'];
+	$cpf = $_POST['cpf'];
 
     $celular = $_POST['celular'];
     

@@ -98,7 +98,7 @@ include "valida_cookies.inc";
 
     <hr class="mb-5">
 
-    <center><a class="navbar-brand" href="TelaPessoal.php">
+    <center><a class="navbar-brand" href="TelaPessoal.html">
 
       <a class="btn btn-primary btn btn-outline-warning" href="https://wa.me/qr/RCJAMHP5EHJNH1" role="button">Suporte</a>
 
@@ -110,7 +110,7 @@ include "valida_cookies.inc";
 
   <div class="container col-md-3" id="container-form-gestao" style="background-color: #dad4ce98;">
 
-    <center><form method="post" action="CalculaSaldoPessoal.php">
+    <center><form>
 
       <hr>
       
@@ -120,7 +120,7 @@ include "valida_cookies.inc";
 
         <label for="inputGanhos"></label>
 
-        <input  type="text" class="form-control" id="inputValGanhos" placeholder="Valor de Ganhos">
+        <input type="text" class="form-control" id="inputValGanhos" placeholder="Valor de Ganhos">
 
       </div>
 
