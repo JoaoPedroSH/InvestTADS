@@ -99,7 +99,7 @@
 
       				<div class="modal-body">
 
-						<form>
+						<form method="post" action="CadastroPlanoPessoal.php">
 
 							<div class="form-row">
 
@@ -107,7 +107,7 @@
 
 									<label for="inputNome1">Nome</label>
 
-										<input type="text" class="form-control" id="inputNome1" required="">
+										<input type="text" class="form-control" name="nome" id="inputNome1" required="">
 
 											<div class="invalid-feedback">
 
@@ -120,7 +120,7 @@
 
 									<label for="inputSobrenome1">Sobrenome</label>
 
-										<input type="text" class="form-control" id="inputSobrenome1" required="">
+										<input type="text" class="form-control" name="sobrenome" id="inputSobrenome1" required="">
 
 											<div class="invalid-feedback">
 
@@ -137,7 +137,7 @@
 
 									<label for="inputCidade1">Cidade</label>
 
-										<input type="text" class="form-control" id="inputCidade1" required="">
+										<input type="text" class="form-control" name="cidade" id="inputCidade1" required="">
 
 											<div class="invalid-feedback">
 
@@ -150,7 +150,7 @@
 
 									<label for="inputCelular1">Celular</label>
 
-										<input type="text" class="form-control" id="inputCelular1" placeholder="Ex:. (XX) XXXXX-XXXX" required="">
+										<input type="text" class="form-control" name="celular" id="inputCelular1" placeholder="Ex:. (XX) XXXXX-XXXX" required="">
 
 											<div class="invalid-feedback">
 
@@ -170,7 +170,9 @@
 								<div class="form-group col-md-6">
 
 									<label for="inputEmail1">Email</label>
-										<input type="email" class="form-control" id="inputEmail1" placeholder="exemplo@email.com" required="">
+
+										<input type="email" class="form-control" name="email" id="inputEmail1" placeholder="exemplo@email.com" required="">
+
 											<div class="invalid-feedback">
 
 												É obrigatório inserir um email válido.
@@ -183,7 +185,8 @@
 
 									<label for="inputSenha1">Senha</label>
 
-										<input type="password" class="form-control" id="inputSenha1" required="">
+										<input type="password" class="form-control" name="senha" id="inputSenha1" required="">
+
 								</div>
 
 							</div>
