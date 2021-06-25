@@ -42,11 +42,19 @@
 
 	values('$nome','$sobrenome','$cidade','$celular','$email','$senha')");
 
-	echo "<div class=\"alert alert-success alert-dismissible fade show\" role=\"alert\">";
+    echo "<center>";
 
-    echo "<strong>Cadastro efetuado com Sucesso!</strong><a href=\"Login.html\" class=\"alert-link\"> Clique aqui para ir ao Loguin.</a>";
+    echo "<div class=\"alert alert-success\" role=\"alert\">";
 
-    echo "<button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button></div>";
+    echo "<h4 class=\"alert-heading\">TUDO CERTO!</h4>";
+
+    echo "<p>Seu Cadastro foi efetuado com Sucesso!</p>";
+
+    echo "<hr>";
+
+    echo "<a href=\"Login.html\" class=\"alert-link\">> Clique Aqui para ir ao Login < |</a><a href=\"Index.html\" class=\"alert-link\"> > Clique Aqui para voltar ao Home <</a></div>";
+
+    echo "</center>";
 
 	?>
 

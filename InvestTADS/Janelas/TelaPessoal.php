@@ -164,14 +164,6 @@ include "valida_cookies.inc";
 
   <p class="mb-1">© 2020-2021 Invest TADS</p>
 
-    <ul class="list-inline">
-
-      <li class="list-inline-item"><a href="#">Privacidade</a></li>
-
-      <li class="list-inline-item"><a href="#">Termos</a></li>
-
-    </ul>
-
 </footer>
 
 <!-------------------------------------------------------------------------------------------------------------->  
