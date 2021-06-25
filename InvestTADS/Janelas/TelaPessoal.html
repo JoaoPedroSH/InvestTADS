@@ -6,7 +6,6 @@ include "valida_cookies.inc";
 <html lang="pt-br">
 
 <head>
-
   <!-- Meta tags -->
   <meta charset="UTF-8">
 
@@ -23,8 +22,15 @@ include "valida_cookies.inc";
 
 </head>
 
-<body style="background-color: #d3d1cf98;">
-
+<body style="background-color: rgba(211, 207, 202, 0.596);">
+  <style>
+    body {
+      background-image: url("imagens/grafico.png");
+      background-size: cover;
+  height: 800px;
+  position: relative;
+    }
+</style>
   <!-- Navbar -->
   <nav class="navbar navbar-light bg-light site-header sticky-top py-1"><img src="imagens/logo.png" class="img-fluid rounded " id="logo" alt="Imagem responsiva" style="margin-right: 30px;">
     <!-- Histórico/Navbar -->
@@ -107,6 +113,7 @@ include "valida_cookies.inc";
     </a></center>
 
   </nav> 
+  
 
   <div class="container col-md-3" id="container-form-gestao" style="background-color: #dad4ce98;">
 
@@ -145,7 +152,7 @@ include "valida_cookies.inc";
 
       <button type="submit" class="btn btn-secondary" style="margin-bottom: 10px;">Calcular Saldo Final</button>
 
-      <input type="text" class="form-control col-md-3" id="inputSaldoFinal" placeholder="Saldo Final">
+      <input type="text" class="form-control col-md-4" id="inputSaldoFinal" placeholder="Saldo Final">
 
       <div class="form-group col-md-10"></div>
 
@@ -190,6 +197,5 @@ include "valida_cookies.inc";
   }
 
 </script>
-
 </body>
 </html>

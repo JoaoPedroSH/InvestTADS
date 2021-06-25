@@ -17,7 +17,15 @@
   </head>
 <!-------------------------------------------------------------------------------------------------------------->	
 		
-<body>
+<body style="background-color: rgba(211, 207, 202, 0.596);">
+	<style>
+		body {
+		  background-image: url("imagens/grafico.png");
+		  background-size: cover;
+	  height: 800px;
+	  position: relative;
+		}
+	</style>
 
 <!-- Navbar -->
 <nav class="navbar navbar-light bg-light site-header sticky-top py-1"><img src="imagens/logo.png" class="img-fluid rounded " id="logo" alt="Imagem responsiva">
@@ -33,7 +41,7 @@
 </nav> 
 	  
 <!-- Jumbotron de apresentação-->
-<center><div class="jumbotron" style="background-image: url(Imagens/imgjumb.png); background-size: 100%;"> <!--  —Foto: Mediamodifier/Pixabay  -->
+<center><div> <!--  —Foto: Mediamodifier/Pixabay  -->
 
   <h1 class="display-4">Olá, mundo!</h1>
 
@@ -141,7 +149,7 @@
 
 											<div class="invalid-feedback">
 
-												CPF inválida.
+												CPF inválido.
 
 											</div>
 								</div>
@@ -163,19 +171,19 @@
 
 							<hr class="mb-4">
 
-							<p>ATENÇÃO!!! O Email e a Senha que informar serão seus dados de login para acessar seu Plano.</p>
+							<p>ATENÇÃO!!! O E-mail e a Senha que informar serão seus dados de login para acessar seu Plano.</p>
 
 							<div class="form-row">
 
 								<div class="form-group col-md-6">
 
-									<label for="inputEmail1">Email</label>
+									<label for="inputEmail1">E-mail</label>
 
 										<input type="email" class="form-control" name="email" id="inputEmail1" placeholder="exemplo@email.com" required="">
 
 											<div class="invalid-feedback">
 
-												É obrigatório inserir um email válido.
+												É obrigatório inserir um e-mail válido.
 
 											</div>
 
@@ -239,7 +247,7 @@
 
 				</ul>
 
-            <button type="button" class="btn btn-lg btn-block btn-secondary" data-toggle="modal" data-target="#modalPlanoFamiliar">Contrate-nos</button>
+            <button type="button" class="btn btn-lg btn-block btn-outline-secondary" data-toggle="modal" data-target="#modalPlanoFamiliar">Contrate-nos</button>
 
 			<div class="modal fade" id="modalPlanoFamiliar" tabindex="-1" role="dialog" aria-labelledby="planopessoal" aria-hidden="true">
 
@@ -414,7 +422,7 @@
 
 <!------------------------------------------------------------------------------------------------------------------------------->
 
-		<div class="card mb-4 shadow-sm">
+		<div class="card mb-4 shadow-sm" style="background-color: #f5f5f5cc;">
 
 			<div class="card-header">
 
@@ -440,7 +448,7 @@
 
 				</ul>
 
-			  <button type="button" class="btn btn-lg btn-block btn-secondary" data-toggle="modal" data-target="#modalPlanoFamiliar">Contrate-nos</button>
+			  <button type="button" class="btn btn-lg btn-block btn-outline-secondary" data-toggle="modal" data-target="#modalPlanoFamiliar">Contrate-nos</button>
 
 			  	<div class="modal fade" id="modalPlanoFamiliar" tabindex="-1" role="dialog" aria-labelledby="planopessoal" aria-hidden="true">
 
