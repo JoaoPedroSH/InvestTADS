@@ -1,3 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	  
+  </head>
+
+  <body>
+
 <?php
 
 $email = $_POST["email"];
@@ -18,9 +34,11 @@ if($linhas==0)
 
 	echo "<html><body>";
 
-	echo "<p align=\"center\">Usuario nao encontrado!</p>";
+	echo "<div class=\"alert alert-danger\" role=\"alert\">";
 
-	echo "<p align=\"center\"><a href=\"Login.html\">Voltar</a></p>";
+	echo "Email incorreto ou não cadastrado! <a href=\"Login.html\" class=\"alert-link\">Tentar novamente!</a>";
+
+	echo "</div>";
 
 	echo "</body></html>";
 
@@ -40,9 +58,11 @@ else
 
 		echo "<html><body>";
 
-		echo "<p align=\"center\">A senha esta incorreta!</p>";
+		echo "<div class=\"alert alert-danger\" role=\"alert\">";
 
-		echo "<p align=\"center\"><a href=\"Login.html\">Voltar</a></p>";
+		echo "Senha Incorreta! <a href=\"Login.html\" class=\"alert-link\">Tentar novamente!</a>";
+
+		echo "</div>";
 
 		echo "</body></html>";
 	}
@@ -63,3 +83,6 @@ else
 
 mysqli_close($con);
 ?>
+
+</body>
+</html>

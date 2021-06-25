@@ -1,7 +1,7 @@
 <?php
-	setcookie("email_usuario");//para excluir o cookie anteriormente, basta exutar o comando 
+	setcookie("email_usuario"); 
 
-	setcookie("senha_usuario");//para excluir o cookie anteriormente, basta exutar o comando 
-    
+	setcookie("senha_usuario");
+
 	header ("Location: Login.html");
 ?>
