@@ -1,18 +1,5 @@
 <?php
-$host="localhost";
-$user="root";
-$pass="123";
-$banco="investtads";
-$conexao=mysql_connect($host, $user, $pass) or die (mysql_error());
-mysql_select_db($banco) or die (mysql_error());
-
-session_start();
-if(!isset($_SESSION["email"]) || !isset($_SESSION["senha"])){//isset verifica se existe a variavel
-	header("location:Login.php");//envia o cabeçalho para o navegador
-	exit;//finaliza os codigos
-}else{
-	echo "<center>Você esta logado!  :D<center>";
-}
+include "valida_cookies.inc";
 ?>
 
 <!DOCTYPE html>
