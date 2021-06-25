@@ -4,7 +4,7 @@
     $host="localhost"; // local 
     $user="root"; /// usuario banco
     $pass="123"; ///  senha banco
-    $banco="cadastroplanopessoal"; /// nome banco
+    $banco="investtads"; /// nome banco
 
      //mysql_connect Inicia conexão com o banco Mysql
 
