@@ -12,7 +12,7 @@
 
 
        //mysql_select_db  Seleciona um banco de daods Mysql
-       mysql_select_db($banco)  or die (mysql_erro());
+       mysql_select_db($banco)  or die (mysql_error());
     
 ?>
 
