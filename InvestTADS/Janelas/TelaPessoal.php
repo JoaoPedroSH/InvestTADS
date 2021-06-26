@@ -27,10 +27,11 @@ include "valida_cookies.inc";
 
   <!-- Navbar -->
   <nav class="navbar navbar-light bg-light site-header sticky-top py-1"><img src="imagens/logo.png" class="img-fluid rounded " id="logo" alt="Imagem responsiva" style="margin-right: 30px;">
+  
     <!-- Histórico/Navbar -->
     <div>
 
-      <button class="btn btn-warning" type="button" style="margin-right:5px; background-color: #fa2b40; margin-right:5px;">
+      <button class="btn btn-warning" name="enviar" action="livros.php" type="submit" style="margin-right:5px; background-color: #fa2b40; margin-right:5px;">
 
         <span style="color: #f1eeee;">Histórico</span>
             
@@ -120,7 +121,7 @@ include "valida_cookies.inc";
 
         <label for="inputGanhos"></label>
 
-        <input  type="text" class="form-control" id="inputValGanhos" placeholder="Valor de Ganhos">
+        <input  type="text" name="ganhos" class="form-control" id="inputValGanhos" placeholder="Valor de Ganhos">
 
       </div>
 
@@ -128,7 +129,7 @@ include "valida_cookies.inc";
 
         <label for="inputDespesas"></label>
 
-          <input type="text" class="form-control" id="inputValDespesas" placeholder="Valor de Despesas">
+          <input type="text" name="despesas" class="form-control" id="inputValDespesas" placeholder="Valor de Despesas">
 
       </div>
 
@@ -139,13 +140,13 @@ include "valida_cookies.inc";
         <button type="button" class="btn btn-lg btn-block btn-secondary";>Dicas para Investir</button>
         <!--Modal-->
 
-        <input type="text" class="form-control" id="inputValInvestimentos" placeholder="Valor para Investimentos">
+        <input type="text" name="investimento" class="form-control" id="inputValInvestimentos" placeholder="Valor para Investimentos">
 
       </div>
 
-      <button type="submit" class="btn btn-secondary" style="margin-bottom: 10px;">Calcular Saldo Final</button>
+      <button type="submit" name="btnsaldo" class="btn btn-secondary" style="margin-bottom: 10px;">Calcular Saldo Final</button>
 
-      <input type="text" class="form-control col-md-3" id="inputSaldoFinal" placeholder="Saldo Final">
+      <input type="text" name="saldofinal" class="form-control col-md-3" id="inputSaldoFinal" placeholder="Saldo Final">
 
       <div class="form-group col-md-10"></div>
 
