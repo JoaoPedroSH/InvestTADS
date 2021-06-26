@@ -19,7 +19,7 @@ include "valida_cookies.inc";
 
   <link rel="stylesheet" href="Styles/TelaPessoal.css">
 
-  <script type="text/javascript" src="SaldoFinal.js"></script>
+  <script type="text/javascript" src="CalculaSaldo.js"></script>
 
   <title>Plano Pessoal</title>
 
@@ -110,7 +110,7 @@ include "valida_cookies.inc";
     </a></center>
 
   </nav> 
-
+<section>
   <div class="container col-md-3" id="container-form-gestao" style="background-color: #dad4ce98;">
 
     <center><form method="post" method="get" action="GestaoPessoal.php">
@@ -123,7 +123,7 @@ include "valida_cookies.inc";
 
         <label for="inputGanhos"></label>
 
-        <input  type="text" name="ganhos" class="form-control" id="inputValGanhos" placeholder="Valor de Ganhos" required="">
+        <input  type="text" name="ganhos" class="num1" id="inputValGanhos" placeholder="Valor de Ganhos" required="">
 
       </div>
 
@@ -131,7 +131,7 @@ include "valida_cookies.inc";
 
         <label for="inputDespesas"></label>
 
-          <input type="text" name="despesas" class="form-control" id="inputValDespesas" placeholder="Valor de Despesas" required="">
+          <input type="text" name="despesas" class="num2" id="inputValDespesas" placeholder="Valor de Despesas" required="">
 
       </div>
 
@@ -141,15 +141,15 @@ include "valida_cookies.inc";
 
         <a class="btn btn-lg btn-block btn-secondary" href="https://www.youtube.com/watch?v=qbTzY38auew" role="button" target="_blank">Dicas para Investir</a>
 
-        <input type="text" name="investimentos" class="form-control" id="inputValInvestimentos" placeholder="Valor para Investimentos" required="">
+        <input type="text" name="investimentos" class="num3" id="inputValInvestimentos" placeholder="Valor para Investimentos" required="">
 
       </div>
 
-      <input type="button" onclick="SaldoFinal();" value="Calcular Saldo" name="btnsaldo" class="btn btn-secondary" style="margin-bottom: 10px;">
+      <button type="button" onclick="calcular();" class="btn btn-secondary" style="margin-bottom: 10px;">Calcular Saldo</button>
 
-     <!-- <label for="inputInvest"></label>
+      <label for="inputInvest">Saldo Final: <p class="resultado" name="saldofinal"></p></label>
 
-      <input type="text" name="saldofinal" class="form-control col-md-3" id="inputSaldoFinal" placeholder="Saldo Final" disabled=""> -->
+     <p class="resultado" name="saldofinal"></p>
 
       <hr>
 
@@ -173,7 +173,7 @@ include "valida_cookies.inc";
     </form></center>
 
   </div>
-
+</section>
 <!-- Rodapé -->
 <footer class="my-5 pt-5 text-muted text-center text-small">
 
