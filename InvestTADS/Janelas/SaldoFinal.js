@@ -1,0 +1,3 @@
+function saldofinal(){
+    $ganhos
+}
