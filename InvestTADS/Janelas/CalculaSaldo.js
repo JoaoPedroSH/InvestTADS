@@ -3,6 +3,7 @@ function calcular(){
     var num2 = document.querySelector(".num2").nodeValue;
     var num3 = document.querySelector(".num3").nodeValue;
 
-    var resultado = ((parseFloat(num1) - parseFloat(num2)) - parseFloat(num3));
+
+    var resultado = Interger.parseInt(num1) - Interger.parseInt(num2) - Interger.parseInt(num3);
     document.querySelector(".resultado").innerHTML = resultado;
 }
