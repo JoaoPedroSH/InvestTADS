@@ -48,7 +48,7 @@ $banco="investtads";
 $con=mysql_connect($host, $user, $pass) or die(mysql_error());
 mysql_select_db($banco) or die (mysql_error());
 
-$res=mysql_query("select * from gestaopessoal where $email like '$$email$'") or die (mysqli_error());
+$res=mysql_query("select * from gestaopessoal where email like '%$email%'") or die (mysqli_error());
 
 $row=mysql_num_rows($res);
 

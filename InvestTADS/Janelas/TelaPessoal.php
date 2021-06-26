@@ -31,11 +31,7 @@ include "valida_cookies.inc";
     <!-- Histórico/Navbar -->
     <div>
 
-      <button class="btn btn-warning" name="enviar" action="HistoricoPessoal.php" type="submit" style="margin-right:5px; background-color: #fa2b40; margin-right:5px;">
-
-        <span style="color: #f1eeee;">Histórico</span>
-            
-      </button>
+      <a class="btn btn-warning" href="HistoricoPessoal.php" role="button" style="margin-right:5px; background-color: #fa2b40; margin-right:5px;"><span style="color: #f1eeee;">Histórico</span></a>
 
     </div>
 
@@ -75,23 +71,27 @@ include "valida_cookies.inc";
 
       <div class="dropdown-menu" aria-labelledby="dropdown-plataformas" >
 
-        <a class="dropdown-item" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjpqZmKzq_xAhXVqZUCHe7ECV8QFjAAegQICRAD&url=https%3A%2F%2Fwww.xpi.com.br%2F&usg=AOvVaw37hN5c1rO_oWzVFb3GFE-t" target="_blank"><img src="imagens/xp.png"></a><!--https://logospng.org/download/xp-investimentos/logo-xp-investimentos-2048.png-->
+        <a class="dropdown-item" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjpqZmKzq_xAhXVqZUCHe7ECV8QFjAAegQICRAD&url=https%3A%2F%2Fwww.xpi.com.br%2F&usg=AOvVaw37hN5c1rO_oWzVFb3GFE-t" target="_blank"><img src="imagens/xp.jpg"></a><!--https://logospng.org/download/xp-investimentos/logo-xp-investimentos-2048.png-->
 
         <hr>
 
-        <a class="dropdown-item" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjvob6bzq_xAhXyr5UCHW_pCk4QFjAAegQIBhAD&url=https%3A%2F%2Fcorretora.clear.com.br%2F&usg=AOvVaw0lz1qnpBwG7FQ3J3-ItywV" target="_blank"><img src="imagens/clear.png"></a><!--https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpMUhiTHM8mLm6cJcmYoLLEBsh-fHUx77Xxc-KR4zilErzXuIzd7kvqEPOFi2PQnBzTJ0&usqp=CAU-->
+        <a class="dropdown-item" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjvob6bzq_xAhXyr5UCHW_pCk4QFjAAegQIBhAD&url=https%3A%2F%2Fcorretora.clear.com.br%2F&usg=AOvVaw0lz1qnpBwG7FQ3J3-ItywV" target="_blank"><img src="imagens/clear.jpg"></a>
+        <!--https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpMUhiTHM8mLm6cJcmYoLLEBsh-fHUx77Xxc-KR4zilErzXuIzd7kvqEPOFi2PQnBzTJ0&usqp=CAU-->
 
         <hr>
 
-        <a class="dropdown-item" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjnr8S0zq_xAhWAlZUCHQV4C-QQFjAAegQIEBAD&url=https%3A%2F%2Fwww.modalmais.com.br%2Fguia-de-plataformas%2Fplataforma-de-investimento-como-escolher&usg=AOvVaw3BXjDuDCnv07SBZNWq9ICJ" target="_blank"><img src="imagens/modalmais.jpg"></a><!--https://blogsupereconomica.com/wp-content/uploads/2018/12/modalmais-%C3%A9-boa.jpg-->
+        <a class="dropdown-item" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjnr8S0zq_xAhWAlZUCHQV4C-QQFjAAegQIEBAD&url=https%3A%2F%2Fwww.modalmais.com.br%2Fguia-de-plataformas%2Fplataforma-de-investimento-como-escolher&usg=AOvVaw3BXjDuDCnv07SBZNWq9ICJ" target="_blank"><img src="imagens/modalmais.jpg"></a>
+        <!--https://blogsupereconomica.com/wp-content/uploads/2018/12/modalmais-%C3%A9-boa.jpg-->
 
         <hr>
 
-        <a class="dropdown-item" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiVncu0zq_xAhUWCJEKHdDKCjwYABADGgJjZQ&ohost=www.google.com&cid=CAESQOD2XNFrDmsVRt_JDwHCQxbhXeZNwPbDbTQ2HLi-A9rd9JBA0IAXCczG6vDA6E2XL0E7Yzt0f1w0bI4PlQrF9iU&sig=AOD64_0dtVulKwARUo67gJVNGZI4nATXWg&q&adurl&ved=2ahUKEwjnr8S0zq_xAhWAlZUCHQV4C-QQ0Qx6BAgFEAE" target="_blank"><img src="imagens/rico.jpg"></a><!--https://investidorsardinha.r7.com/wp-content/uploads/2020/09/a-rico-corretora-e-boa-descubra-vantagens-desvantagens-e-como-abrir-uma-conta.jpg-->
+        <a class="dropdown-item" href="https://www.rico.com.vc/home/?cta-d&campaignid=12503633456&adgroupid=122705626047&feeditemid=&targetid=aud-949262104314:kwd-305867202439&loc_interest_ms=&loc_physical_ms=1001617&matchtype=e&network=g&device=c&devicemodel=&ifmobile=&ifmobile=0&ifsearch=1&ifsearch=&ifcontent=0&ifcontent=&creative=395108875124&keyword=site%20de%20investimentos&placement=&target=&utm_source=google&utm_medium=cpc&utm_term=site%20de%20investimentos&utm_campaign=GGLE_PESQ_Generica&hsa_kw=site%20de%20investimentos&hsa_acc=7134496929&hsa_ad=395108875124&hsa_net=adwords&hsa_src=g&hsa_tgt=aud-949262104314:kwd-305867202439&hsa_grp=122705626047&hsa_mt=e&hsa_cam=6460378010&hsa_ver=3&gclid=CjwKCAjwt8uGBhBAEiwAayu_9fTxWdujdVZsHMxQy6rmmw1UPnnDfNLJ_56I-aI2p5t01BQB07vMkhoCrUkQAvD_BwE" target="_blank"><img src="imagens/rico.jpg"></a>
+        <!--https://investidorsardinha.r7.com/wp-content/uploads/2020/09/a-rico-corretora-e-boa-descubra-vantagens-desvantagens-e-como-abrir-uma-conta.jpg-->
 
         <hr>
 
-        <a class="dropdown-item" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiVncu0zq_xAhUWCJEKHdDKCjwYABAFGgJjZQ&ohost=www.google.com&cid=CAESQOD2XNFrDmsVRt_JDwHCQxbhXeZNwPbDbTQ2HLi-A9rd9JBA0IAXCczG6vDA6E2XL0E7Yzt0f1w0bI4PlQrF9iU&sig=AOD64_2i9crbFWA1dToi4UVDE3_4KbDhSg&q&adurl&ved=2ahUKEwjnr8S0zq_xAhWAlZUCHQV4C-QQ0Qx6BAgGEAE" target="_blank"><img src="imagens/easynvest.png"></a><!--https://www.conta-corrente.com/conta-digital/nuconta/nubank-negocia-compra-da-corretora-easynvest/-->
+        <a class="dropdown-item" href="https://www.easynvest.com.br"  target="_blank"><img src="imagens/easynvest.jpg"></a>
+        <!--https://www.conta-corrente.com/conta-digital/nuconta/nubank-negocia-compra-da-corretora-easynvest/-->
 
       </div>
 
@@ -135,7 +135,8 @@ include "valida_cookies.inc";
 
         <label for="inputInvestimento"></label>
 
-        <button type="submit" href="https://www.youtube.com/watch?v=qbTzY38auew" class="btn btn-lg btn-block btn-secondary" target="_blank";>Dicas para Investir</button>
+        <a class="btn btn-lg btn-block btn-secondary" href="https://www.youtube.com/watch?v=qbTzY38auew" role="button" target="_blank">Dicas para Investir</a>
+
         <!--Modal-->
 
         <input type="text" name="investimento" class="form-control" id="inputValInvestimentos" placeholder="Valor para Investimentos" required="">
@@ -152,7 +153,7 @@ include "valida_cookies.inc";
 
         <label for="inputemail"></label>
 
-          <input type="text" name="email" class="form-control" id="inputemail" placeholder="Informe AQUI seu email de login antes de finalizar." required="">
+          <input type="text" name="email" class="form-control" id="inputemail" placeholder="Informe AQUI seu E-mail de login antes de finalizar." required="">
 
       </div>
 
