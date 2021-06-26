@@ -147,7 +147,7 @@ include "valida_cookies.inc";
 
       <button type="button" onclick="calcular()" class="btn btn-secondary" style="margin-bottom: 10px;">Calcular Saldo</button>
 
-      <label for="inputInvest">Saldo Final:</label>
+      <label for="inputInvest"></label>
 
      <p class="resultado" name="saldofinal"></p>
 

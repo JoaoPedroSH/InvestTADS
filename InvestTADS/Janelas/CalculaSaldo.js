@@ -4,6 +4,6 @@ function calcular(){
     var num3 = document.querySelector(".num3").nodeValue;
 
 
-    var resultado = Interger.parseInt(num1) - Interger.parseInt(num2) - Interger.parseInt(num3);
+    var resultado = parseInt(num1) - parseInt(num2) - parseInt(num3);
     document.querySelector(".resultado").innerHTML = resultado;
 }
