@@ -70,7 +70,7 @@ $row=mysql_num_rows($res);
 
 				echo "<td>$despesas</td>";
 
-				echo "<td>$investimento</td>";
+				echo "<td>$investimentos</td>";
 
 				echo "<td>$saldofinal</td>";
 
