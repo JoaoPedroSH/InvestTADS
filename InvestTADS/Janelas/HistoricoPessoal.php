@@ -1,21 +1,6 @@
 <?php
 
-$chave=$_POST['chave'];
-
-$busca=$_POST['busca'];
-
-if(strlen($busca)<2){
-
-	echo "<html><body>";
-
-	echo "<p align=\"center\">O termo a ser buscado deve ter no minimo 2 caracteres!</p>";
-
-	echo "<p align=\"center\"><a href=\"livros.html\">Voltar</a></p>";
-
-	echo "</body></html>";
-
-	exit;
-}
+$email=$_POST['email'];
 
 ?>
 
@@ -63,7 +48,7 @@ $banco="investtads";
 $con=mysql_connect($host, $user, $pass) or die(mysql_error());
 mysql_select_db($banco) or die (mysql_error());
 
-$res=mysql_query("select * from gestaopessoal where email='$email'") or die (mysqli_error());
+$res=mysql_query("select * from gestaopessoal where $email like '$$email$'") or die (mysqli_error());
 
 $row=mysql_num_rows($res);
 
@@ -94,6 +79,20 @@ $row=mysql_num_rows($res);
 			}
 
 		}
+
+        else{ 
+
+            echo "<html><body>";
+
+            echo "<p align=\"center\">Nenhum livro cadastrado!</p>";
+            
+            echo "</body></html>";
+        
+            echo "<tr bgcolor=\"#eeeeee\">";
+
+            echo "</tr>";
+
+        } 
 
 ?>
 

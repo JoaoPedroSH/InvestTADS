@@ -109,7 +109,7 @@ include "valida_cookies.inc";
 
   <div class="container col-md-3" id="container-form-gestao" style="background-color: #dad4ce98;">
 
-    <center><form method="post" action="CalculaSaldoPessoal.php">
+    <center><form method="post" action="GestaoPessoal.php">
 
       <hr>
       

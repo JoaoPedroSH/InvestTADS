@@ -51,7 +51,7 @@
 
     echo "<hr>";
 
-    echo "<a href=\"HistoricoPessoal.html\" target=\"_blank\" class=\"alert-link\">> Clique Aqui para ver seu Histórico < |</a><a href=\"TelaPessoal.php\" class=\"alert-link\"> > Clique Aqui para voltar a tela de Gestão <</a></div>";
+    echo "<a href=\"HistoricoPessoal.php\" target=\"_blank\" class=\"alert-link\">> Clique Aqui para ver seu Histórico < |</a><a href=\"TelaPessoal.php\" class=\"alert-link\"> > Clique Aqui para voltar a tela de Gestão <</a></div>";
 
     echo "</center>";
 
