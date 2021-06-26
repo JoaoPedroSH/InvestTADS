@@ -31,7 +31,7 @@ include "valida_cookies.inc";
     <!-- Histórico/Navbar -->
     <div>
 
-      <button class="btn btn-warning" name="enviar" action="livros.php" type="submit" style="margin-right:5px; background-color: #fa2b40; margin-right:5px;">
+      <button class="btn btn-warning" name="enviar" action="HistoricoPessoal.php" type="submit" style="margin-right:5px; background-color: #fa2b40; margin-right:5px;">
 
         <span style="color: #f1eeee;">Histórico</span>
             
@@ -101,8 +101,6 @@ include "valida_cookies.inc";
 
     <center><a class="navbar-brand" href="TelaPessoal.php">
 
-      <a class="btn btn-primary btn btn-outline-warning" href="https://wa.me/qr/RCJAMHP5EHJNH1" role="button">Suporte</a>
-
       <a class="btn btn-primary btn btn-outline-danger" href="Logout.php" role="button">Logout</a>
 
     </a></center>
@@ -121,7 +119,7 @@ include "valida_cookies.inc";
 
         <label for="inputGanhos"></label>
 
-        <input  type="text" name="ganhos" class="form-control" id="inputValGanhos" placeholder="Valor de Ganhos">
+        <input  type="text" name="ganhos" class="form-control" id="inputValGanhos" placeholder="Valor de Ganhos" required="">
 
       </div>
 
@@ -129,7 +127,7 @@ include "valida_cookies.inc";
 
         <label for="inputDespesas"></label>
 
-          <input type="text" name="despesas" class="form-control" id="inputValDespesas" placeholder="Valor de Despesas">
+          <input type="text" name="despesas" class="form-control" id="inputValDespesas" placeholder="Valor de Despesas" required="">
 
       </div>
 
@@ -137,17 +135,28 @@ include "valida_cookies.inc";
 
         <label for="inputInvestimento"></label>
 
-        <button type="button" class="btn btn-lg btn-block btn-secondary";>Dicas para Investir</button>
+        <button type="submit" href="https://www.youtube.com/watch?v=qbTzY38auew" class="btn btn-lg btn-block btn-secondary" target="_blank";>Dicas para Investir</button>
         <!--Modal-->
 
-        <input type="text" name="investimento" class="form-control" id="inputValInvestimentos" placeholder="Valor para Investimentos">
+        <input type="text" name="investimento" class="form-control" id="inputValInvestimentos" placeholder="Valor para Investimentos" required="">
 
       </div>
 
       <button type="submit" name="btnsaldo" class="btn btn-secondary" style="margin-bottom: 10px;">Calcular Saldo Final</button>
 
-      <input type="text" name="saldofinal" class="form-control col-md-3" id="inputSaldoFinal" placeholder="Saldo Final">
+      <input type="text" name="saldofinal" class="form-control col-md-3" id="inputSaldoFinal" placeholder="Saldo Final" required="">
 
+      <hr>
+
+      <div class="form-group col-md-10">
+
+        <label for="inputemail"></label>
+
+          <input type="text" name="email" class="form-control" id="inputemail" placeholder="Informe AQUI seu email de login antes de finalizar." required="">
+
+      </div>
+
+      <hr>
       <div class="form-group col-md-10"></div>
 
         <button type="submit" class="btn btn-primary btn btn-warning" style="background-color: #ffad15; color: #f1eeee; margin-bottom: 10px;">Gerar Relatório</button>

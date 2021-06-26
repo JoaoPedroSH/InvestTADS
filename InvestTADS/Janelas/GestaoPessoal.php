@@ -26,21 +26,20 @@
 	$conexao = mysql_connect($host, $user, $pass) or die(mysql_error());
 	mysql_select_db($banco) or die(mysql_error());
 	
-	$nome = $_POST['nome'];
+    $email = $_POST['email'];
 
-	$sobrenome = $_POST['sobrenome'];
+	$ganhos = $_POST['ganhos'];
 
-	$cpf = $_POST['cpf'];
+	$despesas = $_POST['despesas'];
 
-    $celular = $_POST['celular'];
+	$investimentos = $_POST['investimentos'];
+
+    $saldofinal = $_POST['saldofinal'];
     
-	$email = $_POST['email'];
 
-	$senha = $_POST['senha'];
+	$sql = mysql_query("INSERT into gestaopessoal(email, ganhos, despesas, investimentos, saldofinal) 
 
-	$sql = mysql_query("INSERT into cadastroplanopessoal(nome, sobrenome, cpf, celular, email, senha) 
-
-	values('$nome','$sobrenome','$cpf','$celular','$email','$senha')");
+	values('$email','$ganhos','$despesas','$investimentos','$saldofinal')");
 
     echo "<center>";
 
@@ -48,11 +47,11 @@
 
     echo "<h4 class=\"alert-heading\">TUDO CERTO!</h4>";
 
-    echo "<p>Seu Cadastro foi efetuado com Sucesso!</p>";
+    echo "<p>Informações guardadas!</p>";
 
     echo "<hr>";
 
-    echo "<a href=\"Login.html\" target=\"_blank\" class=\"alert-link\">> Clique Aqui para ir ao Login < |</a><a href=\"Index.html\" class=\"alert-link\"> > Clique Aqui para voltar ao Home <</a></div>";
+    echo "<a href=\"HistoricoPessoal.html\" target=\"_blank\" class=\"alert-link\">> Clique Aqui para ver seu Histórico < |</a><a href=\"TelaPessoal.php\" class=\"alert-link\"> > Clique Aqui para voltar a tela de Gestão <</a></div>";
 
     echo "</center>";
 
