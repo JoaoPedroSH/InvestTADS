@@ -32,8 +32,6 @@ $email=$_POST['email'];
 
 		<td><b>Valor Investimentos</b></td>
 
-		<td><b>Saldo Final</b></td>
-
 	</tr>
 
 <?php
