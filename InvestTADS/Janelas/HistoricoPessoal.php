@@ -57,6 +57,8 @@ $row=mysql_num_rows($res);
 
 			while($linha=mysql_fetch_array($res)){
 
+				if($email='email'){
+
 				$ganhos=$linha['ganhos'];
 
 				$despesas=$linha['despesas'];
@@ -76,6 +78,20 @@ $row=mysql_num_rows($res);
 				echo "<td>$saldofinal</td>";
 
 				echo "</tr>";
+
+				} else {
+					echo "<html><body>";
+
+            		echo "<p align=\"center\">Informe o Email correto para visualizar seu Histórico!</p>";
+            
+            		echo "</body></html>";
+        
+           			echo "<tr bgcolor=\"#eeeeee\">";
+
+            echo "</tr>";
+				}
+
+				
 
 			}
 

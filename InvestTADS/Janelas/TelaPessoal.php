@@ -146,6 +146,8 @@ include "valida_cookies.inc";
 
             <a class="btn btn-primary btn btn-outline-danger" href="Logout.php" role="button">Logout</a>
 
+            <a class="btn btn-primary btn btn-outline-warning" href="" role="button">Suporte</a>
+
         </a></center>
 
 </nav>
@@ -183,10 +185,10 @@ include "valida_cookies.inc";
 
                     <input v-on:keyup="investimento = $event.target.value" type="text" name="investimentos" class="form-control" placeholder="Valor para Investimentos" required="">
 
-                    <p> </p>
+                    <p></p>
                 </div>
 
-                <p>Saldo Final: R${{ calcular() }}</p>
+                <p name="saldofinal">Saldo Final: R${{ calcular() }}</p>
 
                 <hr>
 
