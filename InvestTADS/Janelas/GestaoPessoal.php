@@ -45,7 +45,7 @@
 
     echo "<h4 class=\"alert-heading\">TUDO CERTO!</h4>";
 
-    echo "<p>Informações guardadas!</p>";
+    echo "<p>Informações guardadas no histórico!</p>";
 
     echo "<hr>";
 
