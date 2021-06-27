@@ -19,6 +19,8 @@ include "valida_cookies.inc";
 
   <link rel="stylesheet" href="Styles/TelaPessoal.css">
 
+  <script type="text/javascript" src="CalculaSaldo.js"></script>
+
   <title>Plano Pessoal</title>
 
 </head>
@@ -32,6 +34,8 @@ include "valida_cookies.inc";
   position: relative;
     }
 </style>
+
+
 
   <!-- Navbar -->
   <nav class="navbar navbar-light bg-light site-header sticky-top py-1"><img src="imagens/logo.png" class="img-fluid rounded " id="logo" alt="Imagem responsiva" style="margin-right: 30px;">
@@ -109,16 +113,18 @@ include "valida_cookies.inc";
 
     <center><a class="navbar-brand" href="TelaPessoal.php">
 
+    <a class="btn btn-primary btn btn-outline-warning" href="https://wa.me/qr/RCJAMHP5EHJNH1" role="button">Suporte</a>
+
       <a class="btn btn-primary btn btn-outline-danger" href="Logout.php" role="button">Logout</a>
 
     </a></center>
 
   </nav> 
-
+<section>
   <div class="container col-md-3" id="container-form-gestao" style="background-color: #dad4ce98;">
 
     <center><form method="post" action="GestaoPessoal.php">
-
+  
       <hr>
       
       <h4 id="h4-gestaopessoal">GESTÃO PESSOAL</h4>
@@ -127,7 +133,7 @@ include "valida_cookies.inc";
 
         <label for="inputGanhos"></label>
 
-        <input  type="text" name="ganhos" class="form-control" id="inputValGanhos" placeholder="Valor de Ganhos" required="">
+        <input  type="number" name="ganhos" class="num1" id="inputValGanhos" placeholder="Valor de Ganhos" required="">
 
       </div>
 
@@ -135,7 +141,7 @@ include "valida_cookies.inc";
 
         <label for="inputDespesas"></label>
 
-          <input type="text" name="despesas" class="form-control" id="inputValDespesas" placeholder="Valor de Despesas" required="">
+          <input type="number" name="despesas" class="num2" id="inputValDespesas" placeholder="Valor de Despesas" required="">
 
       </div>
 
@@ -145,15 +151,15 @@ include "valida_cookies.inc";
 
         <a class="btn btn-lg btn-block btn-secondary" href="https://www.youtube.com/watch?v=qbTzY38auew" role="button" target="_blank">Dicas para Investir</a>
 
-        <!--Modal-->
-
-        <input type="text" name="investimento" class="form-control" id="inputValInvestimentos" placeholder="Valor para Investimentos" required="">
+        <input type="number" name="investimentos" class="num3" id="inputValInvestimentos" placeholder="Valor para Investimentos" required="">
 
       </div>
 
-      <button type="submit" name="btnsaldo" class="btn btn-secondary" style="margin-bottom: 10px;">Calcular Saldo Final</button>
+      <button type="button" onclick="calcular()" class="btn btn-secondary" style="margin-bottom: 10px;">Calcular Saldo</button>
 
-      <input type="text" name="saldofinal" class="form-control col-md-3" id="inputSaldoFinal" placeholder="Saldo Final" required="">
+      <label for="inputInvest"></label>
+
+     <p class="resultado" name="saldofinal"></p>
 
       <hr>
 
@@ -161,7 +167,7 @@ include "valida_cookies.inc";
 
         <label for="inputemail"></label>
 
-          <input type="text" name="email" class="form-control" id="inputemail" placeholder="Informe AQUI seu E-mail de login antes de finalizar." required="">
+          <input type="text" name="email" class="form-control" id="inputemail" placeholder="Informe aqui seu E-mail!" required="">
 
       </div>
 
@@ -177,7 +183,7 @@ include "valida_cookies.inc";
     </form></center>
 
   </div>
-
+</section>
 <!-- Rodapé -->
 <footer class="my-5 pt-5 text-muted text-center text-small">
 

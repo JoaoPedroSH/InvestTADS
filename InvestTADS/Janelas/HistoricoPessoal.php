@@ -71,7 +71,7 @@ $row=mysql_num_rows($res);
 
 				echo "<td>$despesas</td>";
 
-				echo "<td>$investimento</td>";
+				echo "<td>$investimentos</td>";
 
 				echo "<td>$saldofinal</td>";
 
@@ -85,7 +85,7 @@ $row=mysql_num_rows($res);
 
             echo "<html><body>";
 
-            echo "<p align=\"center\">Nenhum livro cadastrado!</p>";
+            echo "<p align=\"center\">Nenhum dado encontrado!</p>";
             
             echo "</body></html>";
         

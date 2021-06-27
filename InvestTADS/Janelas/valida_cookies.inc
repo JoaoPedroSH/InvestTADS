@@ -42,6 +42,7 @@ if(!(empty($email_usuario) OR empty($senha_usuario)))//empty
     else
 
     {
+        setcookie("comprovante");
 
         setcookie("email_usuario");
 

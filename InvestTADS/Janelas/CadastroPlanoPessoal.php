@@ -38,9 +38,11 @@
 
 	$senha = $_POST['senha'];
 
-	$sql = mysql_query("INSERT into cadastroplanopessoal(nome, sobrenome, cpf, celular, email, senha) 
+	$comprovante = $_POST['comprovante'];
 
-	values('$nome','$sobrenome','$cpf','$celular','$email','$senha')");
+	$sql = mysql_query("INSERT into cadastroplanopessoal(nome, sobrenome, cpf, celular, email, senha, comprovante) 
+
+	values('$nome','$sobrenome','$cpf','$celular','$email','$senha','$comprovante')");
 
     echo "<center>";
 

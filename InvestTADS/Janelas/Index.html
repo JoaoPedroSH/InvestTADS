@@ -10,24 +10,30 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-	<link rel="stylesheet" href="Styles/Index.css">
-
 	<title>InvestTADS</title>
 	  
   </head>
-<!-------------------------------------------------------------------------------------------------------------->	
-		
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 <body style="background-color: #d3cfca98;">
+
 	<style>
+
 		body {
+
 		  background-image: url("imagens/grafico.png");
+
 		  background-size: cover;
-	  height: 800px;
-	  position: relative;
+
+	  	  height: 800px;
+
+	  	  position: relative;
+
 		}
+
 	</style>
 
-<!-- Navbar -->
+<!-- NAVBAR -->
 <nav class="navbar navbar-light bg-light site-header sticky-top py-1"><img src="imagens/logo.png" class="img-fluid rounded " id="logo" alt="Imagem responsiva">
 
 
@@ -53,7 +59,7 @@
 	
 </nav> 
 	  
-<!-- Jumbotron de apresentação-->
+<!-- JUMBOTRON DE BOAS VINDAS-->
 <center><div class="jumbotron" style="background-color: #e4e1e171;"> <!--  —Foto: Mediamodifier/Pixabay  -->
 
   <h1 class="display-3" style="color: #383636;font-size: 70px; font-family:Grand Aventure Text, Helvetica, sans-serif;">Bem-vindo ao Invest TADS!</h1>
@@ -68,7 +74,7 @@
 </div></center>	  
 	  
 	  
-<!-- Cards dos planos -->
+<!-- CARD -->
 <div class="container">
 
     <div class="card-deck mb-3 text-center">
@@ -79,303 +85,144 @@
 
             <h4 class="my-0 font-weight-normal" style="color: #3d3b3b;">Plano Pessoal&nbsp;&nbsp;</h4>
 
-          </div>
+          	</div>
 
-    <div class="card-body">
+		<div class="card-body">
 
-        <h1 class="card-title pricing-card-title">R$0 <small class="text-muted">/ mês</small></h1>
-
-			<ul class="list-unstyled mt-3 mb-4">
-				
-				<li>&nbsp;</li>
-				
-				<li style="color: #383636; font-size: 22px;">- Gestão Básica&nbsp;</li>
-
-				<li style="color: #383636; font-size: 22px;">- Módulo Educacional&nbsp;</li>
-
-				<li style="color: #383636; font-size: 22px;">- Histórico de Gestão&nbsp;</li>
-
-				<li>&nbsp;</li>
-
-			</ul>
-
-            <button type="button" class="btn btn-lg btn-block btn-outline-secondary" data-toggle="modal" data-target="#modalPlanoPessoal">Cadastre-se Gratuitamente</button>
-
-		<div class="modal fade" id="modalPlanoPessoal" tabindex="-1" role="dialog" aria-labelledby="planopessoal" aria-hidden="true">
-
-  			<div class="modal-dialog" role="document">
-
-    			<div class="modal-content">
-
-      				<div class="modal-header">
-
-        				<h4 class="modal-title" id="planopessoal">Cadastro do Plano Pessoal</h4>
-
-        					<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-
-          						<span aria-hidden="true">&times;</span>
-
-        					</button>
-
-      				</div>
-
-      				<div class="modal-body">
-
-						<form method="post" action="CadastroPlanoPessoal.php">
-
-							<div class="form-row">
-
-								<div class="form-group col-md-6">
-
-									<label for="inputNome1">Nome</label>
-
-										<input type="text" class="form-control" name="nome" id="inputNome1" required="">
-
-											<div class="invalid-feedback">
-
-												Nome inválido.
-
-											</div>
-								</div>
-
-								<div class="form-group col-md-6">
-
-									<label for="inputSobrenome1">Sobrenome</label>
-
-										<input type="text" class="form-control" name="sobrenome" id="inputSobrenome1" required="">
-
-											<div class="invalid-feedback">
-
-												Sobernome inválido.
-
-											</div>
-								</div>
-
-							</div>
-
-							<div class="form-row">
-
-								<div class="form-group col-md-6">
-
-									<label for="inputCpf">CPF</label>
-
-										<input type="text" class="form-control" name="cpf" id="inputCpf" required="">
-
-											<div class="invalid-feedback">
-
-												CPF inválida.
-
-											</div>
-								</div>
-
-								<div class="form-group col-md-6">
-
-									<label for="inputCelular1">Celular</label>
-
-										<input type="text" class="form-control" name="celular" id="inputCelular1" placeholder="Ex:. (XX) XXXXX-XXXX" required="">
-
-											<div class="invalid-feedback">
-
-												Celular inválido.
-
-											</div>
-								</div>
-
-							</div>
-
-							<hr class="mb-4">
-
-							<p>ATENÇÃO!!! O E-mail e a Senha que informar serão seus dados de login para acessar seu Plano.</p>
-
-							<div class="form-row">
-
-								<div class="form-group col-md-6">
-
-									<label for="inputEmail1">E-mail</label>
-
-										<input type="email" class="form-control" name="email" id="inputEmail1" placeholder="exemplo@email.com" required="">
-
-											<div class="invalid-feedback">
-
-												É obrigatório inserir um e-mail válido.
-
-											</div>
-
-								</div>
-
-								<div class="form-group col-md-6">
-
-									<label for="inputSenha1">Senha</label>
-
-										<input type="password" class="form-control" name="senha" id="inputSenha1" required="">
-
-								</div>
-
-							</div>
-
-							<hr class="mb-4">
-
-							<button type="submit" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-
-							<button type="submit" class="btn btn-warning">Finalizar Cadastro</button>
-
-						</form>
-
-      				</div>
-
-    			</div>
-
-  			</div>
-
-		</div>	 
-
-    </div>
-
-</div>	
-
-
-
-<!------------------------------------------------------------------------------------------------------------------------------->
-
-		<div class="card mb-4 shadow-sm" style="background-color: #ffffffce;">
-
-			<div class="card-header" style="background-color: #8af104ce;">
-
-			  <h4 class="my-0 font-weight-normal" style="color: #3d3b3b;">Plano Empresarial&nbsp;</h4>
-
-			</div>
-
-			<div class="card-body">
-
-			  <h1 class="card-title pricing-card-title">R$35 <small class="text-muted">/ mês</small></h1>
+			<h1 class="card-title pricing-card-title">R$0 <small class="text-muted">/ mês</small></h1>
 
 				<ul class="list-unstyled mt-3 mb-4">
+					
+					<li>&nbsp;</li>
+					
+					<li style="color: #383636; font-size: 22px;">- Gestão Básica&nbsp;</li>
 
-					<li style="color: #383636; font-size: 20px;">- Business Inteligence&nbsp;</li>
+					<li style="color: #383636; font-size: 22px;">- Módulo Educacional&nbsp;</li>
 
-					<li style="color: #383636; font-size: 20px;">- Suporte&nbsp;</li>
+					<li style="color: #383636; font-size: 22px;">- Histórico de Gestão&nbsp;</li>
 
-					<li style="color: #383636; font-size: 20px;">- Módulo Educacional (Avançado)&nbsp;</li>
+					<li style="color: #383636; font-size: 22px;">- Suporte&nbsp;</li>
 
-					<li style="color: #383636; font-size: 20px;">- Notícias de Mercado&nbsp;</li>
+					<li style="color: #383636; font-size: 22px;">- Notícias de Mercado&nbsp;</li>
 
-					<li style="color: #383636; font-size: 20px;">- Histórico de Gestão&nbsp;</li>
+					<li>&nbsp;</li>
 
 				</ul>
 
-			  <button type="button" class="btn btn-lg btn-block btn-outline-secondary" data-toggle="modal" data-target="#modalPlanoFamiliar">Contrate-nos</button>
+				<button type="button" class="btn btn-lg btn-block btn-outline-secondary" data-toggle="modal" data-target="#modalPlanoPessoal">Cadastre-se Gratuitamente</button>
 
-			  	<div class="modal fade" id="modalPlanoFamiliar" tabindex="-1" role="dialog" aria-labelledby="planopessoal" aria-hidden="true">
+			<div class="modal fade" id="modalPlanoPessoal" tabindex="-1" role="dialog" aria-labelledby="planopessoal" aria-hidden="true">
 
-					<div class="modal-dialog" role="document">
+				<div class="modal-dialog" role="document">
 
-					  	<div class="modal-content">
+					<div class="modal-content">
 
-							<div class="modal-header">
+						<div class="modal-header">
 
-						  		<h4 class="modal-title" id="planofamiliar">Cadastro do Plano Empresarial</h4>
+							<h4 class="modal-title" id="planopessoal">Cadastro do Plano Pessoal</h4>
 
 								<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
 
 									<span aria-hidden="true">&times;</span>
 
 								</button>
-							</div>
 
-							<div class="modal-body">
+						</div>
 
-								<form method="post" action="CadastroPlanoEmpresarial.php">
+						<div class="modal-body">
 
-									<div class="form-row">
+							<form method="post" action="CadastroPlanoPessoal.php" enctype="multipart/form-data">
 
-										<div class="form-group col-md-6">
+								<div class="form-row">
 
-											<label for="inputNome2">Nome da Empresa</label>
+									<div class="form-group col-md-6">
 
-												<input type="text" class="form-control" name="nome" id="inputNome2" required="">
+										<label for="inputNome1">Nome</label>
 
-													<div class="invalid-feedback">
+											<input type="text" class="form-control" name="nome" id="inputNome1" required="">
 
-															Nome inválido.
+												<div class="invalid-feedback">
 
-													</div>
-										</div>
+													Nome inválido.
 
-										<div class="form-group col-md-6">
-
-											<label for="inputArea2">Área de Atuação</label>
-
-												<input type="text" class="form-control" name="area" id="inputArea2" required="">
-													<div class="invalid-feedback">
-
-															Área inválida.
-
-													</div>
-
-										</div>
+												</div>
 									</div>
 
-									<div class="form-row">
+									<div class="form-group col-md-6">
 
-										<div class="form-group col-md-6">
+										<label for="inputSobrenome1">Sobrenome</label>
 
-											<label for="inputCpf2">CNPJ</label>
+											<input type="text" class="form-control" name="sobrenome" id="inputSobrenome1" required="">
 
-												<input type="text" class="form-control" name="cnpj" id="inputCpf2" required="">
+												<div class="invalid-feedback">
 
-													<div class="invalid-feedback">
+													Sobernome inválido.
 
-															CNPJ inválido.
-
-													</div>
-										</div>
-
-										<div class="form-group col-md-6">
-
-											<label for="inputTelefone2">Telefone</label>
-
-												<input type="text" class="form-control" name="telefone" id="inputTelefone2" placeholder="Ex:. (XX) XXXXX-XXXX" required="">
-
-													<div class="invalid-feedback">
-
-															Telefone inválido.
-
-													</div>
-
-										</div>
-
+												</div>
 									</div>
 
-									<hr class="mb-4">
+								</div>
 
-									<p>ATENÇÃO!!! O Email e a Senha que informar serão seus dados de login para acessar seu Plano.</p>
+								<div class="form-row">
 
-									<div class="form-row">
+									<div class="form-group col-md-6">
 
-										<div class="form-group col-md-6">
+										<label for="inputCpf">CPF</label>
 
-											<label for="inputEmail2">Email</label>
+											<input type="text" class="form-control" name="cpf" id="inputCpf" required="">
 
-												<input type="email" class="form-control" name="email" id="inputEmail2" placeholder="exemplo@email.com" required="">
+												<div class="invalid-feedback">
 
-													<div class="invalid-feedback">
+													CPF inválida.
 
-															É obrigatório inserir um email válido.
+												</div>
+									</div>
 
-													</div>
-										</div>
+									<div class="form-group col-md-6">
 
-										<div class="form-group col-md-6">
+										<label for="inputCelular1">Celular</label>
 
-											<label for="inputSenha2">Senha</label>
+											<input type="text" class="form-control" name="celular" id="inputCelular1" placeholder="Ex:. (XX) XXXXX-XXXX" required="">
 
-												<input type="password" class="form-control" name="senha" id="inputSenha2" required="">
+												<div class="invalid-feedback">
 
-										</div>
+													Celular inválido.
+
+												</div>
+									</div>
+
+								</div>
+
+								<hr class="mb-4">
+
+								<p>ATENÇÃO!!! O E-mail e a Senha que informar serão seus dados de login para acessar seu Plano.</p>
+
+								<div class="form-row">
+
+									<div class="form-group col-md-6">
+
+										<label for="inputEmail1">E-mail</label>
+
+											<input type="email" class="form-control" name="email" id="inputEmail1" placeholder="exemplo@email.com" required="">
+
+												<div class="invalid-feedback">
+
+													É obrigatório inserir um e-mail válido.
+
+												</div>
 
 									</div>
 
-									<!--Pagamento empresarial-->
+									<div class="form-group col-md-6">
+
+										<label for="inputSenha1">Senha</label>
+
+											<input type="password" class="form-control" name="senha" id="inputSenha1" required="">
+
+									</div>
+
+								</div>
+
 									<hr class="mb-4">
 
 									<h2 class="mb-3">Pagamento</h2>
@@ -408,7 +255,7 @@
 
 									<input type="hidden" name="MAX_FILE_SIZE" value="4194304"/>
 
-									<input name="comprovante" type="file"/>
+									<input name="comprovante" required type="file"/>
 
 									<hr class="mb-4">
 
@@ -418,31 +265,30 @@
 
 								</form>
 
-							</div>
+      						</div>
 
-				   		</div>
+    					</div>
 
-					</div>
+  					</div>
 
-			   	</div>
+				</div>	 
 
-			</div>
+    		</div>
 
 		</div>
 
-    </div>
+	</div>
 
 </div>	
 	 
-<!-- Rodapé -->
+<!-- RODAPÉ -->
     <footer class="my-5 pt-5 text-muted text-center text-small">
 
         <p class="mb-1">© 2020-2021 Invest TADS<br><br></p>
 
     </footer>
 	  
-<!-------------------------------------------------------------------------------------------------------------->  
-	
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------->  
 <!-- jQuery, Popper.js, Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
