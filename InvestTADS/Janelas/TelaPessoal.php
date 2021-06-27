@@ -105,6 +105,8 @@ include "valida_cookies.inc";
 
     <center><a class="navbar-brand" href="TelaPessoal.php">
 
+    <a class="btn btn-primary btn btn-outline-warning" href="https://wa.me/qr/RCJAMHP5EHJNH1" role="button">Suporte</a>
+
       <a class="btn btn-primary btn btn-outline-danger" href="Logout.php" role="button">Logout</a>
 
     </a></center>
