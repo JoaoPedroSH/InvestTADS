@@ -17,7 +17,20 @@ $email=$_POST['email'];
 </head>
 
 <body>
+<style>
 
+    body {
+
+      background-image: url("imagens/set.jpg");
+
+      background-size: cover;
+
+      height: 800px;
+
+      position: relative;
+      
+    }
+</style>
 	<br><br><br><br>
 	<h1 align="center">HISTÓRICO DE GESTÃO</h1>
 
