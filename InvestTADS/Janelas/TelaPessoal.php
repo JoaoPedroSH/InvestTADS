@@ -27,43 +27,40 @@ include "valida_cookies.inc";
 
 </head>
 
-<<<<<<< Updated upstream
-<body style="background-color: #d3d1cf98;">
-=======
-<<<<<<< HEAD
 <body style="background-color: #d3cfca98;">
+
   <style>
+
     body {
+
       background-image: url("imagens/set.jpg");
+
       background-size: cover;
-  height: 800px;
-  position: relative;
+
+      height: 800px;
+
+      position: relative;
+      
     }
 </style>
-=======
-<body style="background-color: #d3d1cf98;">
->>>>>>> 0b6f168b35737aeec2f341f659f9ea431adc2e04
->>>>>>> Stashed changes
-
 
 <!-- Navbar -->
 <nav class="navbar navbar-light bg-light site-header sticky-top py-1">
+
   <img src="imagens/logo.png" class="img-fluid rounded " id="logo" alt="Imagem responsiva" style="margin-right: 30px;">
 
     <!-- Histórico/Navbar -->
     <div>
 
-        <a class="btn btn-warning" href="HistoricoPessoal.php" role="button"
-           style="margin-right:5px; background-color: #fa2b40; margin-right:5px;"><span style="color: #f1eeee;">Histórico</span></a>
+        <a class="btn btn-warning" href="HistoricoPessoal.php" role="button" style="margin-right:5px; background-color: #fa2b40; margin-right:5px;">
+        <span style="color: #f1eeee;">Histórico</span></a>
 
     </div>
 
     <!-- Educacional/Navbar -->
     <div class="dropdown">
 
-        <button class="btn btn-warning dropdown-toggle" type="button" id="dropdown-educacional" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false"
-                style="margin-right:5px; background-color: #fa2b40; margin-right:5px;">
+        <button class="btn btn-warning dropdown-toggle" type="button" id="dropdown-educacional" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right:5px; background-color: #fa2b40; margin-right:5px;">
 
             <span style="color: #f1eeee;">Educacional</span>
 
