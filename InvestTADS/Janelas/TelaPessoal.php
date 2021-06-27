@@ -27,7 +27,23 @@ include "valida_cookies.inc";
 
 </head>
 
+<<<<<<< Updated upstream
 <body style="background-color: #d3d1cf98;">
+=======
+<<<<<<< HEAD
+<body style="background-color: #d3cfca98;">
+  <style>
+    body {
+      background-image: url("imagens/set.jpg");
+      background-size: cover;
+  height: 800px;
+  position: relative;
+    }
+</style>
+=======
+<body style="background-color: #d3d1cf98;">
+>>>>>>> 0b6f168b35737aeec2f341f659f9ea431adc2e04
+>>>>>>> Stashed changes
 
 
 <!-- Navbar -->
