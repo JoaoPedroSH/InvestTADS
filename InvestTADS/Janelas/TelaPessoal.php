@@ -146,7 +146,7 @@ include "valida_cookies.inc";
 
             <a class="btn btn-primary btn btn-outline-danger" href="Logout.php" role="button">Logout</a>
 
-            <a class="btn btn-primary btn btn-outline-warning" href="" role="button">Suporte</a>
+            <a class="btn btn-primary btn btn-outline-warning" href="https://wa.me/qr/LOWMSBCCKQJUL1" role="button">Suporte</a>
 
         </a></center>
 
