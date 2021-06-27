@@ -181,7 +181,7 @@ include "valida_cookies.inc";
 
                     <label for="inputInvestimento"></label>
 
-                    <a class="btn btn-lg btn-block btn-secondary" href="https://www.youtube.com/watch?v=qbTzY38auew" role="button" target="_blank">Dicas para Investir</a>
+                    <a class="btn btn-block btn-outline-secondary" href="https://www.youtube.com/watch?v=qbTzY38auew" role="button" target="_blank">Dicas para Investir</a>
 
                     <input v-on:keyup="investimento = $event.target.value" type="text" name="investimentos" class="form-control" placeholder="Valor para Investimentos" required="">
 
