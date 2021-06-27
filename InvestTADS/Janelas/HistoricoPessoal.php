@@ -18,11 +18,12 @@ $email=$_POST['email'];
 
 <body>
 
+	<br><br><br><br>
 	<h1 align="center">HISTÓRICO DE GESTÃO</h1>
 
 	<hr>
-
-	<table>
+<center>
+<table>
 
 	<tr bgcolor="#5B96C0" style="margin-right: 30px;">
 
@@ -93,10 +94,10 @@ $row=mysql_num_rows($res);
 ?>
 
 </table>
-
+</center>
 	<hr>
 
-	<p align="center"><a href="TelaPessoal.php">Voltar</a></p>
+	<p type="button" align="center"><a href="TelaPessoal.php">Voltar</a></p>
 
 </body>
 </html>
