@@ -8,10 +8,11 @@ $email=$_POST['email'];
 <head>
 
 <meta charset="utf-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 <title>Livros</title>
 
-	<style> table{ border-spacing: 3px;}</style>
+	<style> table{ border-spacing: 5px;}</style>
 
 </head>
 
@@ -23,7 +24,7 @@ $email=$_POST['email'];
 
 	<table>
 
-	<tr bgcolor="#5B96C0">
+	<tr bgcolor="#5B96C0" style="margin-right: 30px;">
 
 		<td><b>Valor Ganhos</b></td>
 

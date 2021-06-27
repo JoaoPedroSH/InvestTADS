@@ -23,7 +23,15 @@ include "valida_cookies.inc";
 
 </head>
 
-<body style="background-color: #d3d1cf98;">
+<body style="background-color: #d3cfca98;">
+  <style>
+    body {
+      background-image: url("imagens/grafico.png");
+      background-size: cover;
+  height: 800px;
+  position: relative;
+    }
+</style>
 
   <!-- Navbar -->
   <nav class="navbar navbar-light bg-light site-header sticky-top py-1"><img src="imagens/logo.png" class="img-fluid rounded " id="logo" alt="Imagem responsiva" style="margin-right: 30px;">
