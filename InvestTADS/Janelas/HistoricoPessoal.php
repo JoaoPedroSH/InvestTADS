@@ -10,7 +10,7 @@ $email=$_POST['email'];
 <meta charset="utf-8">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-<title>Livros</title>
+<title>Histórico</title>
 
 	<style> table{ border-spacing: 5px;}</style>
 
@@ -33,18 +33,17 @@ $email=$_POST['email'];
 </style>
 	<br><br><br><br>
 	<h1 align="center">HISTÓRICO DE GESTÃO</h1>
-
-	<hr>
+<br><br>
 <center>
 <table>
 
 	<tr bgcolor="#5B96C0" style="margin-right: 30px;">
 
-		<td><b>Valor Ganhos</b></td>
-
-		<td><b>Valor Despesas</b></td>
-
-		<td><b>Valor Investimentos</b></td>
+		<td><b>| Ganhos |</b></td>
+		
+		<td><b>| Despesas |</b></td>
+		
+		<td><b>| Investimentos |</b></td>
 
 	</tr>
 
@@ -78,17 +77,16 @@ $row=mysql_num_rows($res);
 					
 				echo "<tr bgcolor=\"#eeeeee\">";
 
-				echo "<td>$ganhos</td>";
+				echo "<td align=\"center\" >$ganhos</td>";
 
-				echo "<td>$despesas</td>";
+				echo "<td align=\"center\" >$despesas</td>";
 
-				echo "<td>$investimentos</td>";
+				echo "<td align=\"center\" >$investimentos</td>";
 
 				echo "</tr>";
 
-				}
-
 			}
+		}
 
         else{ 
 
@@ -108,9 +106,9 @@ $row=mysql_num_rows($res);
 
 </table>
 </center>
-	<hr>
-
-	<p type="button" align="center"><a href="TelaPessoal.php">Voltar</a></p>
+<br>
+<br>
+	<p align="center"><a type="button" href="TelaPessoal.php">Voltar</a></p>
 
 </body>
 </html>
