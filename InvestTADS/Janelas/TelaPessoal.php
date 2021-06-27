@@ -23,7 +23,7 @@ include "valida_cookies.inc";
 
     <script type="text/javascript" src="CalculaSaldo.js"></script>
 
-    <title>Plano Pessoal</title>
+    <title>Gestão</title>
 
 </head>
 
@@ -157,13 +157,13 @@ include "valida_cookies.inc";
 
                 <hr>
 
-                <h4 id="h4-gestaopessoal">GESTÃO PESSOAL</h4>
+                <h4 id="h4-gestaopessoal">GESTÃO FINANCEIRA</h4>
 
                 <div class="form-group col-md-10">
 
                     <label for="inputGanhos"></label>
 
-                    <input v-on:keyup="ganho = $event.target.value" type="text" name="ganhos" class="form-control" id="inputValGanhos" placeholder="Valor de Ganhos" required="">
+                    <input v-on:keyup="ganho = $event.target.value" type="text" name="ganhos" class="form-control" placeholder="Valor de Ganhos" required="">
 
                 </div>
 
@@ -171,7 +171,7 @@ include "valida_cookies.inc";
 
                     <label for="inputDespesas"></label>
 
-                    <input v-on:keyup="despesa = $event.target.value" type="text" name="despesas" class="form-control" id="inputValDespesas" placeholder="Valor de Despesas" required="">
+                    <input v-on:keyup="despesa = $event.target.value" type="text" name="despesas" class="form-control" placeholder="Valor de Despesas" required="">
 
                 </div>
 
@@ -181,14 +181,12 @@ include "valida_cookies.inc";
 
                     <a class="btn btn-lg btn-block btn-secondary" href="https://www.youtube.com/watch?v=qbTzY38auew" role="button" target="_blank">Dicas para Investir</a>
 
-                    <input v-on:keyup="investimento = $event.target.value" type="text" name="investimentos" class="form-control" id="inputValInvestimentos" placeholder="Valor para Investimentos" required="">
+                    <input v-on:keyup="investimento = $event.target.value" type="text" name="investimentos" class="form-control" placeholder="Valor para Investimentos" required="">
 
                     <p> </p>
                 </div>
 
-                <label for="inputInvest">Saldo Final</label>
-
-                <p>{{ calcular() }}</p>
+                <p>Saldo Final: R${{ calcular() }}</p>
 
                 <hr>
 
@@ -196,17 +194,14 @@ include "valida_cookies.inc";
 
                     <label for="inputemail"></label>
 
-                    <input type="text" name="email" class="form-control" id="inputemail" placeholder="Informe aqui seu E-mail!" required="">
+                    <input type="text" name="email" class="form-control" id="inputemail" placeholder="Informe seu E-mail" required="">
 
                 </div>
 
                 <hr>
                 <div class="form-group col-md-10"></div>
 
-                <button type="submit" class="btn btn-primary btn btn-warning" style="background-color: #ffad15; color: #f1eeee; margin-bottom: 10px;">Gerar Relatório
-                </button>
-
-                <button type="submit" class="btn btn-primary btn btn-danger" style="background-color: #fa2b40; margin-bottom: 10px;">Finalizar
+                <button type="submit" id="btnfinalizar" class="btn btn-primary btn btn-danger" style="background-color: #fa2b40; margin-bottom: 10px;">Finalizar
                 </button>
 
     </div>

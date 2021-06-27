@@ -11,3 +11,11 @@
 #inputSaldoFinal{
     margin-bottom: 25px;
 }
+
+.form-control{
+    text-align: center;
+}
+
+#btnfinalizar{
+    size: 50;
+}
