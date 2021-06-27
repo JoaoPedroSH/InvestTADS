@@ -113,7 +113,7 @@ include "valida_cookies.inc";
 <section>
   <div class="container col-md-3" id="container-form-gestao" style="background-color: #dad4ce98;">
 
-    <center><form method="post" method="get" action="GestaoPessoal.php">
+    <center><form method="post" action="GestaoPessoal.php">
   
       <hr>
       
@@ -123,7 +123,7 @@ include "valida_cookies.inc";
 
         <label for="inputGanhos"></label>
 
-        <input  type="text" name="ganhos" class="num1" id="inputValGanhos" placeholder="Valor de Ganhos" required="">
+        <input  type="number" name="ganhos" class="num1" id="inputValGanhos" placeholder="Valor de Ganhos" required="">
 
       </div>
 
@@ -131,7 +131,7 @@ include "valida_cookies.inc";
 
         <label for="inputDespesas"></label>
 
-          <input type="text" name="despesas" class="num2" id="inputValDespesas" placeholder="Valor de Despesas" required="">
+          <input type="number" name="despesas" class="num2" id="inputValDespesas" placeholder="Valor de Despesas" required="">
 
       </div>
 
@@ -141,7 +141,7 @@ include "valida_cookies.inc";
 
         <a class="btn btn-lg btn-block btn-secondary" href="https://www.youtube.com/watch?v=qbTzY38auew" role="button" target="_blank">Dicas para Investir</a>
 
-        <input type="text" name="investimentos" class="num3" id="inputValInvestimentos" placeholder="Valor para Investimentos" required="">
+        <input type="number" name="investimentos" class="num3" id="inputValInvestimentos" placeholder="Valor para Investimentos" required="">
 
       </div>
 
