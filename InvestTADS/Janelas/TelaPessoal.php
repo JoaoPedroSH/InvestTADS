@@ -28,7 +28,7 @@ include "valida_cookies.inc";
 <body style="background-color: #d3cfca98;">
   <style>
     body {
-      background-image: url("imagens/grafico.png");
+      background-image: url("imagens/set.jpg");
       background-size: cover;
   height: 800px;
   position: relative;
