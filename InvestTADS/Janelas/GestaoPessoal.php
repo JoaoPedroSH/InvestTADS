@@ -33,13 +33,11 @@
 	$despesas = $_POST['despesas'];
 
 	$investimentos = $_POST['investimentos'];
-
-    $saldofinal = parseFloat($ganhos) - parseFloat($despesas) - parseFloat($investimentos);
     
 
-	$sql = mysql_query("INSERT into gestaopessoal(email, ganhos, despesas, investimentos, saldofinal) 
+	$sql = mysql_query("INSERT into gestaopessoal(email, ganhos, despesas, investimentos) 
 
-	values('$email','$ganhos','$despesas','$investimentos','$saldofinal)");
+	values('$email','$ganhos','$despesas','$investimentos')");
 
     echo "<center>";
 
