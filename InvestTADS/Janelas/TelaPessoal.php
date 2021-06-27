@@ -152,7 +152,7 @@ include "valida_cookies.inc";
 
                     <label for="inputGanhos"></label>
 
-                    <input v-model="ganho" type="text" name="ganhos" class="num1" id="inputValGanhos"
+                    <input v-on:keyup="ganho = $event.target.value" type="text" name="ganhos" class="num1" id="inputValGanhos"
                            placeholder="Valor de Ganhos" required="">
 
                 </div>
@@ -161,7 +161,7 @@ include "valida_cookies.inc";
 
                     <label for="inputDespesas"></label>
 
-                    <input v-model="despesa" type="text" name="despesas" class="num2" id="inputValDespesas"
+                    <input v-on:keyup="despesa = $event.target.value" type="text" name="despesas" class="num2" id="inputValDespesas"
                            placeholder="Valor de Despesas" required="">
 
                 </div>
@@ -173,18 +173,19 @@ include "valida_cookies.inc";
                     <a class="btn btn-lg btn-block btn-secondary" href="https://www.youtube.com/watch?v=qbTzY38auew"
                        role="button" target="_blank">Dicas para Investir</a>
 
-                    <input v-model="investimento" type="text" name="investimentos" class="num3"
+                    <input v-on:keyup="investimento = $event.target.value" type="text" name="investimentos" class="num3"
                            id="inputValInvestimentos" placeholder="Valor para Investimentos" required="">
 
+                    <p> </p>
                 </div>
-<!-- <button type="button" v-bind:onclick="calcular " class="btn btn-secondary" style="margin-bottom: 10px;"> -->
-                <button type="button" onclick="calcular()" class="btn btn-secondary" style="margin-bottom: 10px;">
+                <!-- <button type="button" v-bind:onclick="calcular " class="btn btn-secondary" style="margin-bottom: 10px;"> -->
+                <button type="button" v-on:click="calcular" class="btn btn-secondary" style="margin-bottom: 10px;">
                     Calcular Saldo
                 </button>
 
                 <label for="inputInvest"></label>
 
-                <p class="resultado" name="saldofinal"></p>
+                <p>{{ calcular() }}</p>
 
                 <hr>
 
