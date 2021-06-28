@@ -12,7 +12,6 @@
 </head>
 
 <body>
-
 	<?php
 
 	$host = "localhost";
@@ -25,6 +24,7 @@
 
 	$conexao = mysql_connect($host, $user, $pass) or die(mysql_error());
 	mysql_select_db($banco) or die(mysql_error());
+
 	
 	$nome = $_POST['nome'];
 
@@ -40,7 +40,7 @@
 
 	$comprovante = $_POST['comprovante'];
 
-	$sql = mysql_query("INSERT into cadastroplanopessoal(nome, sobrenome, cpf, celular, email, senha, comprovante) 
+	$sql = mysql_query("INSERT into cadastroplanopessoal(nome, sobrenome, cpf, celular, email, senha,comprovante) 
 
 	values('$nome','$sobrenome','$cpf','$celular','$email','$senha','$comprovante')");
 
@@ -59,6 +59,7 @@
     echo "</center>";
 
 	?>
+
 
 </body>
 </html>
