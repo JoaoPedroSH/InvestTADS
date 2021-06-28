@@ -41,9 +41,9 @@ $email=$_POST['email'];
 
 		<td><b>| Ganhos |</b></td>
 		
-		<td><b>| Despesas |</b></td>
+		<td><b> Despesas |</b></td>
 		
-		<td><b>| Investimentos |</b></td>
+		<td><b> Investimentos |</b></td>
 
 	</tr>
 
@@ -68,12 +68,13 @@ $row=mysql_num_rows($res);
 
 			while($linha=mysql_fetch_array($res)){
 
-
 				$ganhos=$linha['ganhos'];
 
 				$despesas=$linha['despesas'];
 
 				$investimentos=$linha['investimentos'];
+
+				
 					
 				echo "<tr bgcolor=\"#eeeeee\">";
 
